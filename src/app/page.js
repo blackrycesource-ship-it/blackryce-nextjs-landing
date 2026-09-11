@@ -834,7 +834,7 @@ ${formData.message}
             <div className="stat-icon">☺</div>
             <div>
               <h3>
-                <CountUp end={100} duration={2200} /> Happy Clients
+                <CountUp end={700} duration={2200} /> Happy Clients
               </h3>
               <p>From startups to Fortune 500 enterprises.</p>
             </div>
