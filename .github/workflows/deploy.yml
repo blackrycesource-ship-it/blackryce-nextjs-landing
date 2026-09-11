@@ -1,0 +1,46 @@
+name: Deploy BlackRyce
+
+on:
+  push:
+    branches:
+      - deployment
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+
+          printf '%s\n' "${{ secrets.HOSTINGER_SSH_KEY }}" \
+            > ~/.ssh/blackryce_hostinger_deploy
+
+          chmod 600 ~/.ssh/blackryce_hostinger_deploy
+
+          printf '%s\n' \
+            '[147.93.17.53]:65002 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPYBr8Kd5AMvd6QhoXSJ0aRTLFcRL7ioI7e1pk/ENSYa' \
+            > ~/.ssh/known_hosts
+
+      - name: Deploy to Hostinger
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/blackryce_hostinger_deploy -p ${{ secrets.HOSTINGER_PORT }}" \
+            out/ \
+            "${{ secrets.HOSTINGER_USER }}@${{ secrets.HOSTINGER_HOST }}:${{ secrets.HOSTINGER_TARGET }}"
