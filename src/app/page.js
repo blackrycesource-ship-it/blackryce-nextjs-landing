@@ -824,7 +824,7 @@ ${formData.message}
             <div className="stat-icon">✦</div>
             <div>
               <h3>
-                <CountUp end={27} duration={1800} /> Years of Experience
+                <CountUp end={3} duration={1800} /> Years of Experience
               </h3>
               <p>Proven technology expertise since 2024.</p>
             </div>
@@ -834,7 +834,7 @@ ${formData.message}
             <div className="stat-icon">☺</div>
             <div>
               <h3>
-                <CountUp end={1000} duration={2200} /> Happy Clients
+                <CountUp end={100} duration={2200} /> Happy Clients
               </h3>
               <p>From startups to Fortune 500 enterprises.</p>
             </div>
@@ -844,7 +844,7 @@ ${formData.message}
             <div className="stat-icon">▣</div>
             <div>
               <h3>
-                <CountUp end={3000} duration={2600} /> Projects
+                <CountUp end={500} duration={2600} /> Projects
               </h3>
               <p>Ideas transformed into digital solutions.</p>
             </div>
@@ -854,7 +854,7 @@ ${formData.message}
             <div className="stat-icon">♧</div>
             <div>
               <h3>
-                <CountUp end={200} duration={1800} /> Tech Professionals
+                <CountUp end={25} duration={1800} /> Tech Professionals
               </h3>
               <p>Experts across modern technologies.</p>
             </div>

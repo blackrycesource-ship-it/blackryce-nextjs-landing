@@ -113,13 +113,13 @@ export default function Navbar() {
         ))}
 
         <a
-  href="https://wa.me/919365427150"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="nav-button"
->
-  Let's talk
-</a>
+          href="https://wa.me/919365427150"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-button"
+          >
+            Let's talk
+          </a>
 
       </div>
 
