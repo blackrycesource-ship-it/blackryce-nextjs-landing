@@ -3,7 +3,7 @@ name: Deploy BlackRyce
 on:
   push:
     branches:
-      - main
+      - deployment
 
 jobs:
   build-and-deploy:
