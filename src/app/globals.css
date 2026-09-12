@@ -2277,7 +2277,7 @@ a {
 
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
   /* CENTER ALL NAV LINKS */
