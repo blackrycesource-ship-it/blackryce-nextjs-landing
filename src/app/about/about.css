@@ -7,6 +7,9 @@
   color: #101211;
 }
 
+.back-home {
+  margin-left: 120px;
+}
 
 /* =========================================
    HERO
@@ -18,7 +21,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 120px 0 90px;
+  padding: 12px 0 90px;
   background: #f7f7f4;
 }
 
