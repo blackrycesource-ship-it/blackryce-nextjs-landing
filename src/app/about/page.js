@@ -8,10 +8,19 @@ export default function AboutPage() {
       {/* =========================================
           HERO
           ========================================= */}
+      <header className="legal-header">
+        <a href="/" className="back-home">
+          ← Back to Home
+        </a>
+      </header>
       <section className="about-hero">
         <div className="about-grid-bg"></div>
 
+
         <div className="page-width about-hero-inner">
+          {/* <a href="/" className="back-home">
+            ← Back to Home
+          </a> */}
 
           <p className="eyebrow">✦ ABOUT BLACKRYCE</p>
 
@@ -103,54 +112,54 @@ export default function AboutPage() {
       {/* =========================================
     COMPANY STATS
     ========================================= */}
-<section className="about-stats">
+      <section className="about-stats">
 
-  <div className="page-width about-stats-grid">
+        <div className="page-width about-stats-grid">
 
-    <div className="about-stat">
+          <div className="about-stat">
 
-      <CountUp
-        end={1000}
-        duration={2200}
-      />
+            <CountUp
+              end={700}
+              duration={2200}
+            />
 
-      <span>
-        Happy Clients
-      </span>
+            <span>
+              Happy Clients
+            </span>
 
-    </div>
-
-
-    <div className="about-stat">
-
-      <CountUp
-        end={3000}
-        duration={2600}
-      />
-
-      <span>
-        Projects Delivered
-      </span>
-
-    </div>
+          </div>
 
 
-    <div className="about-stat">
+          <div className="about-stat">
 
-      <CountUp
-        end={200}
-        duration={1800}
-      />
+            <CountUp
+              end={500}
+              duration={2600}
+            />
 
-      <span>
-        Technology Professionals
-      </span>
+            <span>
+              Projects Delivered
+            </span>
 
-    </div>
+          </div>
 
-  </div>
 
-</section>
+          <div className="about-stat">
+
+            <CountUp
+              end={25}
+              duration={1800}
+            />
+
+            <span>
+              Technology Professionals
+            </span>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
       {/* =========================================
@@ -460,100 +469,100 @@ export default function AboutPage() {
       </section>
 
 
-       {/* =========================================
+      {/* =========================================
     CONTACT INFORMATION
     ========================================= */}
-<section className="about-contact">
+      <section className="about-contact">
 
-  <div className="page-width">
+        <div className="page-width">
 
-    <div className="about-contact-heading">
+          <div className="about-contact-heading">
 
-      <p className="eyebrow">
-        05 / CONTACT
-      </p>
+            <p className="eyebrow">
+              05 / CONTACT
+            </p>
 
-      <h2>
-        Let's stay
-        <span>connected.</span>
-      </h2>
+            <h2>
+              Let's stay
+              <span>connected.</span>
+            </h2>
 
-    </div>
+          </div>
 
 
-    <div className="about-contact-grid">
+          <div className="about-contact-grid">
 
-      {/* ADDRESS */}
-      <div className="about-contact-item">
+            {/* ADDRESS */}
+            <div className="about-contact-item">
 
-        <span className="about-contact-number">01</span>
+              <span className="about-contact-number">01</span>
 
-        <div>
-          <h3>Address</h3>
+              <div>
+                <h3>Address</h3>
 
-          <p>
-            J.D Road, Near Bou Bazar,
-            Kokrajhar, Assam 783370, India
-          </p>
+                <p>
+                  J.D Road, Near Bou Bazar,
+                  Kokrajhar, Assam 783370, India
+                </p>
+              </div>
+
+            </div>
+
+
+            {/* EMAIL */}
+            <div className="about-contact-item">
+
+              <span className="about-contact-number">02</span>
+
+              <div>
+                <h3>Email</h3>
+
+                <a href="mailto:info@blackryce.io">
+                  info.blackryce@gmail.com
+                </a>
+              </div>
+
+            </div>
+
+
+            {/* PHONE */}
+            <div className="about-contact-item">
+
+              <span className="about-contact-number">03</span>
+
+              <div>
+                <h3>Mobile</h3>
+
+                <a href="tel:+919365427150">
+                  +91 93654 27150
+                </a>
+              </div>
+
+            </div>
+
+
+            {/* BUSINESS HOURS */}
+            <div className="about-contact-item">
+
+              <span className="about-contact-number">04</span>
+
+              <div>
+                <h3>Business Hours</h3>
+
+                <p>
+                  Monday – Saturday
+                  <br />
+                  10:00 AM – 6:00 PM
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
-
-
-      {/* EMAIL */}
-      <div className="about-contact-item">
-
-        <span className="about-contact-number">02</span>
-
-        <div>
-          <h3>Email</h3>
-
-          <a href="mailto:info.blackryce@gmail.com">
-            info.blackryce@gmail.com
-          </a>
-        </div>
-
-      </div>
-
-
-      {/* PHONE */}
-      <div className="about-contact-item">
-
-        <span className="about-contact-number">03</span>
-
-        <div>
-          <h3>Mobile</h3>
-
-          <a href="tel:+919365427150">
-            +91 93654 27150
-          </a>
-        </div>
-
-      </div>
-
-
-      {/* BUSINESS HOURS */}
-      <div className="about-contact-item">
-
-        <span className="about-contact-number">04</span>
-
-        <div>
-          <h3>Business Hours</h3>
-
-          <p>
-            Monday – Saturday
-            <br />
-            10:00 AM – 6:00 PM
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+      </section>
 
       {/* =========================================
           CTA
