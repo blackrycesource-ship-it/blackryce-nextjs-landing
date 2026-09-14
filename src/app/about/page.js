@@ -518,7 +518,7 @@ export default function AboutPage() {
                 <h3>Email</h3>
 
                 <a href="mailto:info@blackryce.io">
-                  info.blackryce@gmail.com
+                  info@blackryce.io
                 </a>
               </div>
 
