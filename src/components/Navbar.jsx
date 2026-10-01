@@ -1,16 +1,19 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const links = [
-  { href: "/about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#technology", label: "Technology" },
-  { href: "#work", label: "Work" },
-  { href: "#contact", label: "Contact" },
+  { href: "/about", key: "about" },
+  { href: "#services", key: "services" },
+  { href: "#technology", key: "technology" },
+  { href: "#work", key: "work" },
+  { href: "#contact", key: "contact" },
 ];
 
 export default function Navbar() {
+  const t = useTranslations("nav");
+
   const [open, setOpen] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
 
@@ -69,19 +72,19 @@ export default function Navbar() {
               href={link.href}
               onClick={close}
             >
-              {link.label}
+              {t(link.key)}
             </a>
           ))}
         </nav>
 
         <a
-  href="https://wa.me/919365427150"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="nav-button"
->
-  Let's talk
-</a>
+          href="https://wa.me/919365427150"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-button"
+        >
+          {t("letsTalk")}
+        </a>
 
         <button
           type="button"
@@ -108,7 +111,7 @@ export default function Navbar() {
             href={link.href}
             onClick={close}
           >
-            {link.label}
+            {t(link.key)}
           </a>
         ))}
 
@@ -117,9 +120,9 @@ export default function Navbar() {
           target="_blank"
           rel="noopener noreferrer"
           className="nav-button"
-          >
-            Let's talk
-          </a>
+        >
+          {t("letsTalk")}
+        </a>
 
       </div>
 

@@ -28,20 +28,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "BLACKRYCE",
-            url: "https://www.blackryce.io",
-            logo: "https://www.blackryce.io/logo.jpeg",
-          }),
-        }}
-      />
-             
-       {children}
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "BLACKRYCE",
+      url: "https://www.blackryce.io",
+      logo: "https://www.blackryce.io/logo.jpeg",
+    }),
+  }}
+/>
+
+        {children}
 
         <FloatingButtons />
       </body>
