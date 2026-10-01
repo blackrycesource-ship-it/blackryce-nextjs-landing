@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "technology": "Technology",
+    "work": "Work",
+    "contact": "Contact",
+    "letsTalk": "Let's talk"
+  },
+  "hero": {
+    "title": "Technology with purpose."
+  }
+}
