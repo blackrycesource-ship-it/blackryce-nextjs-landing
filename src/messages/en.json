@@ -1,13 +1,818 @@
-{
-  "nav": {
-    "about": "About",
-    "services": "Services",
-    "technology": "Technology",
-    "work": "Work",
-    "contact": "Contact",
-    "letsTalk": "Let's talk"
-  },
-  "hero": {
-    "title": "Technology with purpose."
-  }
+        {
+          "nav": {
+            "about": "About",
+            "services": "Services",
+            "technology": "Technology",
+            "work": "Work",
+            "contact": "Contact",
+            "letsTalk": "Let's talk"
+          },
+          "hero": {
+            "brand": "BLACKRYCE /DIGITAL ENGINEERING",
+            "title": "Build with Smart Engineers. Transform Businesses.",
+            "titleHighlight": " Enable AI-Driven Growth.",
+            "description": "We help ambitious businesses turn good ideas into useful digital products, modern platforms, and technology that is ready to grow.",
+            "startConversation": "Start a conversation",
+            "seeWork": "See our work",
+            "technologyPurpose": "Technology with purpose."
+          },
+          "services": {
+            "eyebrow": "01 / WHAT WE DO",
+            "title": "Digital solutions built around the way you work.",
+            "description": "From websites and software to digital marketing and business solutions, we build practical technology around your goals.",
+            "items": {
+              "website": {
+                "title": "Custom Website Development",
+                "description": "Custom-built websites designed around your brand, business goals and customers."
+              },
+              "corporate": {
+                "title": "Business & Corporate Websites",
+                "description": "Professional websites that establish your online presence and support business growth."
+              },
+              "ecommerce": {
+                "title": "E-Commerce Development",
+                "description": "Scalable online stores built to deliver smooth shopping experiences and support sales."
+              },
+              "uiux": {
+                "title": "UI/UX Design",
+                "description": "Simple and engaging interfaces designed to make digital products easy and enjoyable to use."
+              },
+              "responsive": {
+                "title": "Mobile & Responsive Websites",
+                "description": "Responsive experiences that work smoothly across mobile, tablet and desktop devices."
+              },
+              "crm": {
+                "title": "CRM & Business Solutions",
+                "description": "Digital solutions that help businesses manage customers, workflows and everyday operations."
+              },
+              "seo": {
+                "title": "SEO & Digital Marketing",
+                "description": "Strategies that improve online visibility, reach the right audience and generate meaningful growth."
+              },
+              "performance": {
+                "title": "Performance Marketing",
+                "description": "Data-driven campaigns focused on measurable traffic, leads and business results."
+              },
+              "software": {
+                "title": "Custom Software Development",
+                "description": "Tailored software solutions built around your specific business processes and requirements."
+              },
+              "flutter": {
+                "title": "Flutter App Development",
+                "description": "Build beautiful, high-performance Android and iOS apps with Flutter from a single codebase."
+              },
+              "network": {
+                "title": "Network Infrastructure Setup",
+                "description": "Build reliable, secure, and scalable network infrastructure for your business."
+              },
+              "security": {
+                "title": "Security Audit & VAPT",
+                "description": "Identify vulnerabilities, strengthen security, and protect your systems from cyber threats."
+              },
+              "influencer": {
+                "title": "Influencer Marketing",
+                "description": "Connect with the right influencers to increase brand awareness, reach, and engagement."
+              }
+            }
+          },
+
+          "technology": {
+          "eyebrow": "✦ Technology Ecosystem",
+          "title": "Build. Transform. Scale.",
+          "titleHighlight": "One Stop Technology Partner.",
+          "description": "200+ technology experts across modern tech stacks.",
+          "schedule": "Schedule a Consultation"
+        },
+
+                "engagement": {
+          "eyebrow": "✦ Engagement Models",
+          "title": "We Offer Flexible Engagement Models to",
+          "titleHighlight": "Match Your Goals, Timeline and Budget.",
+          "description": "Choose the model that fits your roadmap, budget and delivery speed.",
+          "scale": {
+            "title": "Scale",
+            "subtitle": "Dedicated Team",
+            "description": "Scale your capabilities with dedicated developers, designers, engineers and AI specialists - seamlessly integrated with your team.",
+            "button": "Build a Team"
+          },
+          "launch": {
+            "title": "Launch",
+            "subtitle": "Fixed Cost Model",
+            "description": "From web and mobile to custom software, turn defined requirements into scalable solutions with clear scope, timelines and costs.",
+            "button": "Get a Quote"
+          },
+          "flexible": {
+            "title": "Flexible",
+            "subtitle": "Hourly Basis",
+            "description": "Stay agile with on-demand tech talent for evolving requirements, continuous improvements and rapid development needs.",
+            "button": "Start a Discussion"
+          }
+        },
+
+        "contact": {
+          "eyebrow": "05 / LET'S TALK",
+          "title": "Tell us what",
+          "titleHighlight": "you're building.",
+          "experience": "Years of Experience",
+          "experienceDescription": "Proven technology expertise since 2024.",
+          "clients": "Happy Clients",
+          "clientsDescription": "From startups to Fortune 500 enterprises.",
+          "projects": "Projects",
+          "projectsDescription": "Ideas transformed into digital solutions.",
+          "professionals": "Tech Professionals",
+          "professionalsDescription": "Experts across modern technologies.",
+          "formTitle": "Discuss Your Software Development, AI & Digital Transformation Needs",
+          "fullName": "Full Name *",
+          "email": "Business Email Address *",
+          "mobile": "Mobile Number *",
+          "mobilePlaceholder": "Enter mobile number",
+          "industry": "Industry *",
+          "message": "Message *",
+          "messagePlaceholder": "Type your message here",
+          "privacyNote": "I consent that my personal data will be processed to respond to this enquiry.",
+          "note": "Note:",
+          "schedule": "Schedule a Consultation"
+        },
+        "footer": {
+          "tagline": "IT. INNOVATION. DIGITAL.",
+          "description": "A trusted technology partner for startups, SMEs and enterprises, delivering scalable digital solutions that support business growth.",
+          "social": "Social Connect",
+          "quickLinks": "QUICK LINKS",
+          "home": "Home",
+          "services": "Services",
+          "technology": "Technology",
+          "industries": "Industries",
+          "work": "Work",
+          "contact": "Contact",
+          "servicesTitle": "SERVICES",
+          "contactTitle": "CONTACT",
+          "country": "India",
+          "privacyPolicy": "Privacy Policy",
+          "terms": "Terms & Conditions",
+          "copyright": "© 2026 BlackRyce Technologies LLP, India. All Rights Reserved.",
+          "country": "India",
+        "address": "J.D. Road, near Bou Bazar, Kokrajhar, Assam, India – 783370",
+        "privacyPolicy": "Privacy Policy",
+        "terms": "Terms & Conditions"
+        },
+        "trust": {
+          "eyebrow": "✦ Trusted Partner",
+          "title": "Startups, SMEs & Enterprises.",
+          "titleHighlight": "Worldwide Trust Us.",
+          "description": "Trusted partnerships built on client satisfaction, expertise and results."
+        },
+        "transformation": {
+          "eyebrow": "✦ Transform Business Smarter",
+          "title": "Digital Transformation for",
+          "titleHighlight": "Startups, SMBs & Enterprises",
+          "description": "Choose a starting point and we can tailor the architecture, model and workflow to your goals.",
+          "startup": {
+            "title": "Startups & SMBs",
+            "description": "MVP development, websites, mobile apps, SaaS products, SEO and growth support without the overhead of a large internal team.",
+            "button": "Discuss Solution"
+          },
+          "saas": {
+            "title": "SaaS & Product Companies",
+            "description": "Product design, cloud architecture, multi-tenancy, AI features, billing and continuous product engineering.",
+            "button": "Discuss Solution"
+          },
+          "enterprise": {
+            "title": "Enterprise Transformation",
+            "description": "Modernize legacy workflows, integrate systems, automate operations and create data-driven digital experiences.",
+            "button": "Discuss Solution"
+          }
+        },
+        "about": {
+          "backHome": "← Back to Home",
+
+          "hero": {
+            "eyebrow": "✦ ABOUT BLACKRYCE",
+            "title": "Building digital solutions",
+            "titleHighlight": "for businesses that want to grow.",
+            "description": "Founded in 2024, BlackRyce helps businesses turn ideas into practical digital solutions — from websites and software to mobile applications, marketing and technology infrastructure.",
+            "startConversation": "Start a Conversation →",
+            "services": "Explore our services"
+          },
+
+          "whoWeAre": {
+            "eyebrow": "01 / WHO WE ARE",
+            "title": "Building technology",
+            "titleHighlight": "with purpose.",
+            "paragraph1": "Founded in 2024, BlackRyce Technologies LLP is a technology and digital solutions company focused on helping businesses build, improve and scale their digital presence.",
+            "paragraph2": "We bring together software development, design, digital marketing, business solutions and modern technology to create practical solutions around real business needs.",
+            "paragraph3": "From websites and mobile applications to custom software, infrastructure, security and digital marketing, we work closely with our clients to turn ideas into reliable digital solutions."
+          },
+
+          "stats": {
+            "clients": "Happy Clients",
+            "projects": "Projects Delivered",
+            "professionals": "Technology Professionals"
+          },
+
+          "approach": {
+            "eyebrow": "02 / OUR APPROACH",
+            "title": "Good technology should be",
+            "titleHighlight": "simple, useful and scalable.",
+            "description": "We believe technology should solve problems rather than create unnecessary complexity.",
+            "understand": {
+              "title": "Understand",
+              "description": "We start by understanding your business, customers, requirements and goals before deciding on the technology."
+            },
+            "build": {
+              "title": "Build",
+              "description": "We turn ideas into thoughtful digital products using modern development, design and technology practices."
+            },
+            "improve": {
+              "title": "Improve",
+              "description": "We continuously refine solutions so they perform better, provide better experiences and remain ready to grow."
+            },
+            "scale": {
+              "title": "Scale",
+              "description": "We build with the future in mind, helping businesses adapt as their users, operations and technology requirements grow."
+            }
+          },
+
+          "capabilities": {
+            "eyebrow": "03 / WHAT WE DO",
+            "title": "From idea to",
+            "titleHighlight": "digital growth.",
+            "web": {
+              "title": "Web & Software Development",
+              "description": "Websites, business platforms, custom software and scalable digital products built around your requirements."
+            },
+            "mobile": {
+              "title": "Mobile Applications",
+              "description": "Modern mobile experiences designed for performance, usability and long-term growth."
+            },
+            "marketing": {
+              "title": "Digital Marketing",
+              "description": "SEO, performance marketing and digital strategies designed around measurable business outcomes."
+            },
+            "business": {
+              "title": "Business Solutions",
+              "description": "CRM, workflow and technology solutions that help businesses operate more efficiently."
+            },
+            "security": {
+              "title": "Infrastructure & Security",
+              "description": "Reliable network infrastructure, security audits and vulnerability assessment solutions."
+            }
+          },
+
+          "mission": {
+            "eyebrow": "04 / OUR MISSION",
+            "title": "Make technology",
+            "titleHighlight": "work for people and businesses.",
+            "paragraph1": "Our mission is to make modern technology more accessible, practical and valuable for businesses of every size.",
+            "paragraph2": "We focus on understanding the problem first, choosing the right technology and delivering solutions that create meaningful value."
+          },
+
+          "vision": {
+            "eyebrow": "✦ OUR VISION",
+            "title": "A future where",
+            "titleHighlight": "technology creates opportunity.",
+            "description": "We aim to grow as a trusted technology partner for businesses looking to innovate, modernize and build for the future."
+          },
+
+          "contact": {
+            "eyebrow": "05 / CONTACT",
+            "title": "Let's stay",
+            "titleHighlight": "connected.",
+            "address": "Address",
+            "addressText": "J.D Road, Near Bou Bazar, Kokrajhar, Assam 783370, India",
+            "email": "Email",
+            "mobile": "Mobile",
+            "businessHours": "Business Hours",
+            "days": "Monday – Saturday",
+            "hours": "10:00 AM – 6:00 PM"
+          },
+
+          "cta": {
+            "eyebrow": "✦ LET'S BUILD SOMETHING",
+            "title": "Have an idea?",
+            "titleHighlight": "Let's turn it into reality.",
+            "description": "Tell us what you're building and let's explore how technology can help your business move forward.",
+            "button": "Talk to BlackRyce →"
+          }
+        },
+        "privacy": {
+          "header": {
+            "brand": "BLACKRYCE",
+            "backHome": "← Back to Home"
+          },
+          "hero": {
+            "eyebrow": "LEGAL",
+            "title": "Privacy Policy",
+            "description": "Your privacy matters to us. This Privacy Policy explains how Blackryce Technologies LLP collects, uses, stores, and protects your information when you use our website and services.",
+            "effectiveDate": "Effective Date: September 08, 2026"
+          },
+          "sections": {
+            "01": {
+          "title": "Privacy Policy",
+          "paragraphs": [
+            "Our Privacy Policy is designed to inform you about our practices regarding the collection, use, storage, and disclosure of information that you may provide through our website or while using our services. We encourage you to read this Privacy Policy carefully before submitting any personal information.",
+            "Whether you are looking for a static or WordPress website, e-commerce development, digital marketing, SEO, Google Ads management, performance marketing, a CRM/ERP business management solution, or public relations services, we are committed to handling your personal information responsibly and transparently."
+          ]
+        },
+
+        "02": {
+          "title": "Intellectual Property Rights",
+          "paragraphs": [
+            "All content available on this website, including but not limited to text, graphics, logos, icons, images, project screenshots, videos, documents, designs, layouts, source code, trademarks, and other materials, is the exclusive property of Blackryce Technologies LLP unless otherwise stated.",
+            "These materials are protected under applicable copyright, trademark, and intellectual property laws.",
+            "You may not reproduce, copy, distribute, modify, publish, transmit, display, sell, or commercially exploit any content from this website without obtaining prior written permission from Blackryce Technologies LLP.",
+            "Unauthorized use of any website content may result in legal action."
+          ]
+        },
+
+        "03": {
+          "title": "Acceptance of This Privacy Policy",
+          "paragraphs": [
+            "By accessing our website, submitting an enquiry form, requesting a quotation, contacting us through WhatsApp, telephone, email, or using any of our services, you acknowledge that you have read, understood, and accepted this Privacy Policy.",
+            "If you do not agree with the terms of this Privacy Policy, please discontinue using our website and refrain from submitting any personal information.",
+            "Your continued use of our website following any updates to this Privacy Policy constitutes your acceptance of those changes."
+          ]
+        },
+
+        "04": {
+          "title": "Information We Collect",
+          "intro": "To provide professional website development, digital marketing, CRM/ERP, and public relations services, we may collect the following information.",
+          "providedTitle": "Information You Provide",
+          "provided": [
+            "Full Name",
+            "Mobile Number",
+            "Email Address",
+            "Company / Business Name",
+            "Business Address",
+            "State and District",
+            "Business Website URL (existing, if any)",
+            "Industry / Business Category",
+            "Marketing Budget / Project Budget",
+            "Project Timeline",
+            "Website, SEO, or Ad Campaign Requirements",
+            "Business Documents, Logos, Brand Assets, or Content Files submitted for a project",
+            "Domain and Hosting Details (where required to deliver a service)",
+            "Social Media / Ad Account Access (only where granted by you for campaign management)",
+            "Any additional information voluntarily shared with us"
+          ],
+          "collectedWhenTitle": "This information is generally collected when you:",
+          "collectedWhen": [
+            "Submit a contact or enquiry form",
+            "Request a quotation",
+            "Contact us through WhatsApp",
+            "Call our office",
+            "Send us an email",
+            "Schedule a consultation or discovery call",
+            "Subscribe to newsletters or updates",
+            "Onboard as a client for an ongoing project (website, SEO, ads, CRM/ERP, or PR)"
+          ],
+          "automaticTitle": "Information Collected Automatically",
+          "automatic": [
+            "IP Address",
+            "Browser Type",
+            "Device Information",
+            "Operating System",
+            "Screen Resolution",
+            "Pages Visited",
+            "Time Spent on the Website",
+            "Referral Source",
+            "Approximate Geographic Location",
+            "Website Usage Statistics"
+          ],
+          "closing": "This information helps us improve website performance, enhance user experience, and understand visitor behavior. The information we collect enables us to understand your requirements, respond to enquiries, prepare quotations, deliver our services, and provide a better customer experience."
+        },"05": {
+          "title": "How We Use Your Information",
+          "intro": "The information we collect may be used to:",
+          "items": [
+            "Respond to your enquiries and requests.",
+            "Prepare project quotations and estimates.",
+            "Schedule consultations.",
+            "Design, develop, and maintain websites.",
+            "Plan and execute SEO and advertising campaigns.",
+            "Provide CRM/ERP and PR services.",
+            "Improve our website and customer experience.",
+            "Maintain internal business records.",
+            "Prevent fraud and unauthorized activities.",
+            "Comply with applicable legal obligations."
+          ]
+        },
+
+        "06": {
+          "title": "WhatsApp Communication",
+          "paragraphs": [
+            "Our website includes a WhatsApp contact option that allows you to communicate directly with our team.",
+            "When you contact us through WhatsApp, information you share may be retained to assist with your enquiry or project."
+          ]
+        },
+
+        "07": {
+          "title": "Cookies & Analytics",
+          "paragraphs": [
+            "Our website uses cookies and similar technologies to improve functionality, analyze visitor behavior, and enhance your browsing experience.",
+            "Cookies may help us understand how visitors interact with our website and allow us to improve our services and website performance."
+          ]
+        },
+
+        "08": {
+          "title": "Digital Marketing & Advertising Platforms",
+          "paragraphs": [
+            "When providing digital marketing, SEO, Google Ads, or performance marketing services, we may work with advertising and analytics platforms such as Google Ads, Meta, and other third-party platforms.",
+            "Where access to advertising or analytics accounts is required, such access is provided by the client and is used only for the agreed business purposes.",
+            "We do not sell your personal information to advertising platforms."
+          ]
+        },
+
+        "09": {
+          "title": "How We Share Your Information",
+          "paragraphs": [
+            "We do not sell, rent, or trade your personal information.",
+            "We may share information with trusted service providers, technology partners, advertising platforms, hosting providers, or other third parties when necessary to provide our services or operate our business.",
+            "We may also disclose information where required by law, legal proceedings, government authorities, or to protect our rights, property, security, or users."
+          ]
+        },
+        "10": {
+          "title": "Data Retention",
+          "paragraphs": [
+            "We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, provide our services, maintain business records, resolve disputes, comply with legal obligations, and enforce our agreements.",
+            "When information is no longer required, we may securely delete, anonymize, or otherwise dispose of it."
+          ]
+        },"11": {
+          "title": "Your Rights & Choices",
+          "paragraphs": [
+            "Depending on applicable law, you may have rights regarding the personal information we hold about you.",
+            "These may include the right to request access, correction, updating, or deletion of your personal information, subject to applicable legal requirements.",
+            "You may also choose not to provide certain information. However, this may limit our ability to provide certain services or respond to specific requests."
+          ]
+        },
+
+        "12": {
+          "title": "Data Security",
+          "paragraphs": [
+            "We take reasonable technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, loss, or misuse.",
+            "However, no method of transmitting or storing information electronically can be guaranteed to be completely secure.",
+            "We continuously review and improve our security practices to help protect the information entrusted to us."
+          ]
+        },
+
+        "13": {
+          "title": "International Data Transfers",
+          "paragraphs": [
+            "Some of our service providers, technology platforms, hosting providers, or third-party services may process information outside your country of residence.",
+            "Where applicable, we take reasonable steps to ensure that personal information is handled in accordance with applicable privacy and data protection requirements."
+          ]
+        },
+
+        "14": {
+          "title": "Third-Party Services",
+          "paragraphs": [
+            "Our website may use or integrate with third-party services including Google Analytics, Google Search Console, Google Ads, Google Maps, WhatsApp Business, Meta, YouTube, LinkedIn, cloud hosting providers, and CRM/ERP platforms.",
+            "These third-party services may collect or process information according to their own privacy policies and terms."
+          ]
+        },
+
+        "15": {
+          "title": "Children's Privacy",
+          "paragraphs": [
+            "Our website and services are intended for individuals who are 18 years of age or older.",
+            "We do not knowingly collect personal information from children under the age of 18."
+          ]
+        },
+
+        "16": {
+          "title": "Third-Party Links",
+          "paragraphs": [
+            "Our website may contain links to third-party websites, applications, or social media platforms.",
+            "These external websites operate independently from Blackryce, and we are not responsible for their privacy practices, content, or security.",
+            "We encourage users to review the privacy policies of any third-party websites they visit before providing personal information."
+          ]
+        },
+          "17": {
+          "title": "Legal Basis for Processing",
+          "paragraphs": [
+            "Where required under applicable privacy laws, we collect and process your personal information based on one or more of the following legal grounds:"
+          ],
+          "items": [
+            "Your consent.",
+            "Performance of a contract or pre-contractual request.",
+            "Compliance with legal obligations.",
+            "Our legitimate business interests, provided those interests do not override your privacy rights."
+          ]
+        },
+
+        "18": {
+          "title": "Data Accuracy",
+          "paragraphs": [
+            "You are responsible for ensuring that the personal information you provide is accurate, complete, and up to date.",
+            "If your contact details or project information changes, please inform us so we can maintain accurate records and continue providing efficient services."
+          ]
+        },
+
+        "19": {
+          "title": "Do Not Track Signals",
+          "paragraphs": [
+            "Some web browsers provide a \"Do Not Track\" (DNT) feature that allows users to indicate their preference regarding online tracking.",
+            "Currently, there is no universally accepted standard for responding to DNT signals. Therefore, our website may not respond to such browser requests."
+          ]
+        },
+
+        "20": {
+          "title": "Changes to This Privacy Policy",
+          "paragraphs": [
+            "We reserve the right to update, revise, or modify this Privacy Policy at any time to reflect changes in our business operations, technology, legal requirements, or services.",
+            "Any revisions will be published on this page along with the updated revision date.",
+            "We encourage users to review this Privacy Policy periodically to stay informed about how we protect their personal information."
+          ]
+        },
+
+        "21": {
+          "title": "Contact Us",
+          "paragraphs": [
+            "If you have any questions, concerns, or requests regarding this Privacy Policy or our data handling practices, please contact us:"
+          ],
+          "contact": {
+            "company": "Blackryce Technologies LLP",
+            "address": "Address: J.D. Road, near Bou Bazar, Kokrajhar, Assam, India – 783370",
+            "phone": "Phone / WhatsApp: +91 9365427150",
+            "email": "Email: info@blackryce.com",
+            "website": "Website: blackryce.com",
+            "hours": "Business Hours: Monday to Saturday, 9:00 AM – 7:00 PM (IST)"
+          }
+        },
+
+        "22": {
+          "title": "Your Consent",
+          "paragraphs": [
+            "By accessing or using the Blackryce Technologies LLP website, submitting enquiry forms, requesting quotations, contacting us through WhatsApp, telephone, email, or using any of our website development, digital marketing, CRM/ERP, or PR services, you acknowledge that you have read, understood, and agreed to this Privacy Policy.",
+            "Your continued use of our website following any changes to this Privacy Policy constitutes your acceptance of those changes."
+          ],
+          "copyright": "© 2026 Blackryce Technologies LLP. All rights reserved."
+        }}},
+        "terms": {
+          "header": {
+            "brand": "BLACKRYCE",
+            "backHome": "← Back to Home"
+          },
+          "hero": {
+            "eyebrow": "LEGAL",
+            "title": "Terms & Conditions",
+            "description": "These Terms & Conditions govern the use of our website and the delivery of our services. By accessing our website or engaging our services, you acknowledge that you have read, understood, and agreed to these Terms & Conditions.",
+            "effectiveDate": "Effective Date: September 8, 2026"
+          
+        },
+        "sections": {
+          "01": {
+            "title": "Company Overview",
+            "description": "Blackryce Technologies LLP (\"Blackryce,\" \"Company,\" \"we,\" \"our,\" or \"us\") provides professional technology and marketing services including, but not limited to:",
+            "services": [
+              "Static Website Development (basic pages)",
+              "Digital Marketing",
+              "Search Engine Optimization (SEO)",
+              "Google Ads Management",
+              "Performance Marketing (Google Ads + Meta Ads)",
+              "E-Commerce Development (customized)",
+              "WordPress Website Development (CMS / dynamic)",
+              "WordPress Website Development (static)",
+              "CRM / ERP – Business Management Solutions",
+              "Public Relations (PR)"
+            ],
+            "closing": "All services are provided in line with applicable laws, industry standards, and project-specific agreements."
+          },
+          "02": {
+          "title": "Quotations & Pricing",
+          "description": "All quotations provided by Blackryce are estimates based on the information available at the time of preparation.",
+          "pricesIntro": "Prices may vary due to:",
+          "priceFactors": [
+            "Scope or feature changes",
+            "Third-party licensing, hosting, or platform costs",
+            "Government taxes",
+            "Additional client requirements",
+            "Ad platform fees (Google Ads, Meta Ads, etc.)",
+            "Market conditions"
+          ],
+          "closing": "A quotation remains valid only for the period specified in the proposal."
+        },
+        "03": {
+  "title": "Project Approval",
+  "intro": "Work will commence only after:",
+  "items": [
+    "Written approval from the client.",
+    "Signed agreement or accepted proposal.",
+    "Advance payment as specified in the contract.",
+    "Submission of all required content, access, and documents."
+  ],
+  "closing": "Failure to provide required approvals or materials may delay project commencement."
+},
+"04": {
+  "title": "Payment Terms",
+  "description": "Clients agree to make payments according to the agreed payment schedule.",
+  "paymentsIntro": "Payments may include:",
+  "paymentItems": [
+    "Booking Amount",
+    "Design / Development Charges",
+    "Monthly Retainer (for SEO, digital marketing, or ad management)",
+    "Ad Spend Advance (billed separately from service fees)",
+    "Final Settlement"
+  ],
+  "closing": "Work may be paused if scheduled payments are not received. Outstanding payments may attract applicable administrative charges or interest where permitted by law."
+},
+"05": {
+  "title": "Delay in Client Response",
+  "paragraphs": [
+    "If project progress is delayed because the client fails to provide approvals, content, credentials, ad account access, or payments, Blackryce shall not be responsible for resulting delays.",
+    "Projects remaining inactive for an extended period may be placed on hold until pending issues are resolved."
+  ]
+},
+"06": {
+  "title": "Changes During a Project",
+  "description": "Clients may request changes to design, functionality, or campaign strategy during a project.",
+  "however": "However:",
+  "items": [
+    "Additional charges may apply.",
+    "Completion dates may change.",
+    "Third-party or platform costs may increase.",
+    "Technical feasibility will be assessed before implementation."
+  ],
+  "closing": "Major scope changes cannot always be accommodated after a project has commenced without a revised agreement."
+},
+"07": {
+  "title": "Scope of Work",
+  "paragraphs": [
+    "Only services specifically mentioned in the signed proposal or agreement are included.",
+    "Any additional work requested after project approval shall be treated as variation work and billed separately."
+  ]
+},
+"08": {
+  "title": "Client Responsibilities",
+  "intro": "Clients are responsible for:",
+  "items": [
+    "Providing accurate business information and required documents.",
+    "Supplying content, images, and materials needed for the project.",
+    "Providing timely access to domains, hosting, ad accounts, and other credentials.",
+    "Approving designs, drafts, or campaigns within the agreed timeframe.",
+    "Making payments on schedule.",
+    "Complying with the advertising policies of platforms such as Google and Meta."
+  ]
+},
+"09": {
+  "title": "Ad Spend & Third-Party Platforms",
+  "intro": "For Google Ads Management, Performance Marketing, and related services:",
+  "items": [
+    "Ad spend is separate from Blackryce's service fees unless stated otherwise in the agreement.",
+    "Blackryce does not guarantee specific results, rankings, or returns, as these depend in part on factors outside our control, including platform algorithms and market conditions.",
+    "Clients are responsible for maintaining sufficient ad account balance to avoid campaign interruption.",
+    "Account suspensions caused by a client's business practices or platform policy violations are not the responsibility of Blackryce."
+  ]
+},
+"10": {
+  "title": "Project Timeline",
+  "description": "Estimated completion timelines are based on normal working conditions and timely client cooperation.",
+  "factorsIntro": "Timelines may be affected by:",
+  "factors": [
+    "Delayed client feedback, content, or approvals",
+    "Third-party platform outages or policy changes",
+    "Government restrictions",
+    "Force majeure events",
+    "Client-requested changes"
+  ],
+  "closing": "Such delays shall not constitute a breach of contract."
+},
+"11": {
+  "title": "Quality Assurance",
+  "paragraphs": [
+    "Blackryce follows accepted industry practices and quality standards throughout every project.",
+    "Clients are encouraged to review project progress at agreed checkpoints and provide feedback within the specified timeframe."
+  ]
+},
+"12": {
+  "title": "Design & Intellectual Property",
+  "paragraphs": [
+    "All designs, wireframes, source code, campaign strategies, creative assets, and reports created by Blackryce remain the intellectual property of the Company unless otherwise agreed in writing.",
+    "Clients receive the right to use approved deliverables solely for their contracted project. Unauthorized copying, resale, reproduction, or commercial use is prohibited.",
+    "Full ownership of final deliverables (such as a completed website) transfers to the client only upon full and final payment."
+  ]
+},
+"13": {
+  "title": "Website Content",
+  "paragraphs": [
+    "All content available on the Blackryce website, including text, graphics, images, videos, logos, icons, layouts, and downloadable materials, is protected by copyright and intellectual property laws.",
+    "No content may be copied, reproduced, modified, distributed, or republished without prior written permission."
+  ]
+},
+"14": {
+  "title": "Third-Party Products & Services",
+  "paragraphs": [
+    "Certain tools, plugins, hosting, licenses, or software used in projects may be supplied by third-party providers.",
+    "Their terms, warranties, and uptime commitments remain subject to the respective providers' policies. Blackryce shall not be responsible for defects, outages, or price changes arising solely from third-party products or services."
+  ]
+},
+"15": {
+  "title": "Account Access & Data",
+  "paragraphs": [
+    "Clients may need to share access to domains, hosting panels, ad accounts, CRM/ERP systems, or analytics platforms for Blackryce to deliver its services.",
+    "Blackryce will use such access solely for the agreed scope of work and will not use client data for any unrelated purpose. Access will be relinquished or transferred back to the client upon request or project completion, subject to any outstanding dues."
+  ]
+},
+"16": {
+  "title": "Cancellation Policy",
+  "intro": "If a client cancels a project after commencement:",
+  "items": [
+    "Design and development charges already incurred are non-refundable.",
+    "Any prepaid ad spend already utilized by platforms is non-refundable.",
+    "Work completed shall be billed proportionately.",
+    "Administrative expenses may also be deducted where applicable."
+  ]
+},
+"17": {
+  "title": "Refund Policy",
+  "intro": "Refunds, if applicable, shall be processed according to the signed agreement.",
+  "nonRefundableIntro": "Amounts already spent on the following are generally non-refundable:",
+  "items": [
+    "Design and development work",
+    "Ad campaigns already run",
+    "Third-party licenses, domains, or hosting",
+    "SEO or consultation work already delivered"
+  ]
+},
+"18": {
+  "title": "Warranty & Support",
+  "description": "Support and bug-fix coverage shall apply only to items specifically mentioned in the project agreement, for the period stated therein.",
+  "exclusionsIntro": "Warranty and support shall not cover:",
+  "exclusions": [
+    "Issues arising from unauthorized changes made by the client or a third party",
+    "Third-party plugin, theme, or platform updates",
+    "Hosting or server-related issues outside Blackryce's control",
+    "Misuse or lack of maintenance after handover"
+  ]
+},
+"19": {
+  "title": "Limitation of Liability",
+  "intro": "To the maximum extent permitted by law, Blackryce shall not be liable for:",
+  "items": [
+    "Indirect losses",
+    "Loss of profits or business opportunity",
+    "Business interruption",
+    "Delays or failures caused by third-party platforms (Google, Meta, hosting providers, etc.)",
+    "Government approvals or restrictions",
+    "Force majeure events"
+  ]
+},
+"20": {
+  "title": "Force Majeure",
+  "intro": "Neither party shall be liable for delays resulting from events beyond reasonable control, including:",
+  "items": [
+    "Natural disasters",
+    "Pandemic",
+    "Government restrictions",
+    "Internet or platform-wide outages",
+    "Civil disturbances",
+    "Supply chain or infrastructure disruptions"
+  ],
+  "closing": "Project schedules shall be adjusted accordingly."
+},
+"21": {
+  "title": "Privacy",
+  "paragraph": "Personal information collected through our website or during project execution shall be handled according to our Privacy Policy and applicable data protection laws."
+},
+"22": {
+  "title": "Termination",
+  "intro": "Blackryce reserves the right to suspend or terminate services if:",
+  "items": [
+    "Payment obligations are not fulfilled.",
+    "False information is provided.",
+    "Illegal activities are detected.",
+    "Clients repeatedly breach contractual obligations.",
+    "Advertising or platform policies are violated."
+  ]
+},
+"23": {
+  "title": "Governing Law",
+  "paragraphs": [
+    "These Terms & Conditions shall be governed by the laws of India.",
+    "Any disputes shall be subject to the jurisdiction of the competent courts where Blackryce Technologies LLP operates."
+  ]
+},
+"24": {
+  "title": "Amendments",
+  "paragraphs": [
+    "Blackryce reserves the right to update, modify, or revise these Terms & Conditions at any time without prior notice.",
+    "Updated versions become effective immediately upon publication on the official website."
+  ]
+},
+"25": {
+  "title": "Contact Information",
+  "intro": "For any questions regarding these Terms & Conditions, project agreements, or our services, please contact us:",
+  "company": "Blackryce Technologies LLP",
+  "address": "Address: J.D. Road, near Bou Bazar, Kokrajhar, Assam, India – 783370",
+  "phone": "Phone / WhatsApp: +91 9365427150",
+  "email": "Email: info@blackryce.com",
+  "website": "Website: blackryce.com",
+  "hours": "Business Hours: Monday to Saturday, 9:00 AM – 7:00 PM (IST)"
 }
+},
+"acceptance": {
+  "title": "✓ Acceptance",
+  "description": "By using our website, requesting a quotation, signing a proposal, or engaging our services, you confirm that you have read, understood, and agreed to these Terms & Conditions."
+},
+"copyright": "© 2026 Blackryce Technologies LLP. All rights reserved."
+      }
+
+        }

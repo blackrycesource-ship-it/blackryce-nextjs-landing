@@ -1,8 +1,10 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
+import { Link } from "@/i18n/navigation";
 
 import {
   industries,
@@ -21,6 +23,14 @@ export default function Home() {
   });
 
   const [countryCode, setCountryCode] = useState("+91");
+  const t = useTranslations("hero");
+  const ts = useTranslations("services");
+  const ttech = useTranslations("technology");
+  const teng = useTranslations("engagement");
+  const tc = useTranslations("contact");
+  const tf = useTranslations("footer");
+  const ttrust = useTranslations("trust");
+const ttrans = useTranslations("transformation");
 
   const handleChange = (e) => {
     setFormData({
@@ -85,34 +95,35 @@ ${formData.message}
   <div className="page-width hero-grid">
 
     <div className="hero-copy">
-    <p className="eyebrow brand-loader">
-  {"BLACKRYCE /DIGITAL ENGINEERING".split("").map((letter, index) => (
-    <span key={index} style={{ animationDelay: `${index * 0.08}s` }}>
-      {letter === " " ? "\u00A0" : letter}
-    </span>
-  ))}
-</p>
+        <p className="eyebrow brand-loader">
+        {t("brand").split("").map((letter, index) => (
+            <span
+            key={index}
+            style={{ animationDelay: `${index * 0.08}s` }}
+            >
+            {letter === " " ? "\u00A0" : letter}
+            </span>
+        ))}
+        </p>
 
-      <h1 className="hero-animate hero-delay-2">
-        Build with Smart Engineers. Transform Businesses.
-        <span> Enable AI-Driven Growth.</span>
-      </h1>
+        <h1 className="hero-animate hero-delay-2">
+        {t("title")}
+        <span>{t("titleHighlight")}</span>
+        </h1>
 
-      <p className="hero-text hero-animate hero-delay-3">
-        We help ambitious businesses turn good ideas into useful digital
-        products, modern platforms, and technology that is ready to
-        grow.
-      </p>
+        <p className="hero-text hero-animate hero-delay-3">
+        {t("description")}
+        </p>
 
-      <div className="hero-actions hero-animate hero-delay-4">
+        <div className="hero-actions hero-animate hero-delay-4">
         <a className="button button-dark" href="#contact">
-          Start a conversation
+            {t("startConversation")}
         </a>
 
-        <a className="text-link" href="#work">
-          See our work <span>↗</span>
-        </a>
-      </div>
+       <a href="#work" className="hero-button secondary">
+        {t("seeWork")} <span>→</span>
+      </a>
+        </div>
     </div>
 
     {/* decorative only, hidden on mobile via css */}
@@ -121,11 +132,7 @@ ${formData.message}
         <span>BR</span>
       </div>
 
-      <p>
-        Technology
-        <br />
-        with purpose.
-      </p>
+      <p>{t("technologyPurpose")}</p>
     </div>
 
   </div>
@@ -136,15 +143,15 @@ ${formData.message}
 <ScrollReveal>
 <section className="trust-strip">
   <div className="page-width">
-    <p className="eyebrow">✦ Trusted Partner</p>
+   <p className="eyebrow">{ttrust("eyebrow")}</p>
 
     <h2>
-  Startups, SMEs & Enterprises.{" "}
-  <span>Worldwide Trust Us.</span>
-</h2>
+      {ttrust("title")}{" "}
+      <span>{ttrust("titleHighlight")}</span>
+    </h2>
 
     <p className="section-subtitle">
-      Trusted partnerships built on client satisfaction, expertise and results.
+      {ttrust("description")}
     </p>
 
     <div className="logo-marquee">
@@ -167,17 +174,16 @@ ${formData.message}
 
     <div className="transformation-intro">
 
-      <p className="eyebrow">✦ Transform Business Smarter</p>
+     <p className="eyebrow">{ttrans("eyebrow")}</p>
 
-      <h2>
-        Digital Transformation for{" "}
-        <span>Startups, SMBs & Enterprises</span>
-      </h2>
+    <h2>
+      {ttrans("title")}{" "}
+      <span>{ttrans("titleHighlight")}</span>
+    </h2>
 
-      <p className="section-subtitle">
-        Choose a Starting point and we can tailor the architecture,
-        model and workflow to your goals.
-      </p>
+    <p className="section-subtitle">
+      {ttrans("description")}
+    </p>
 
     </div>
 
@@ -185,52 +191,42 @@ ${formData.message}
 
       <div className="transformation-card">
         <div className="card-top">
-          <h3>Startups & SMBs</h3>
+          <h3>{ttrans("startup.title")}</h3>
           <div className="card-icon">♢</div>
         </div>
 
-        <p>
-          MVP development, websites, mobile apps, SaaS products,
-          SEO and growth support without the overhead of a large
-          internal team.
-        </p>
+       <p>{ttrans("startup.description")}</p>
 
         <a href="#contact" className="card-button">
-          Discuss Solution <span>→</span>
+          {ttrans("startup.button")} <span>→</span>
         </a>
       </div>
 
 
       <div className="transformation-card">
         <div className="card-top">
-          <h3>SaaS & Product Companies</h3>
+          <h3>{ttrans("saas.title")}</h3>
           <div className="card-icon">⌘</div>
         </div>
 
-        <p>
-          Product design, cloud architecture, multi-tenancy, AI
-          features, billing and continuous product engineering.
-        </p>
+        <p>{ttrans("saas.description")}</p>
 
         <a href="#contact" className="card-button">
-          Discuss Solution <span>→</span>
+          {ttrans("saas.button")} <span>→</span>
         </a>
       </div>
 
 
       <div className="transformation-card">
         <div className="card-top">
-          <h3>Enterprise Transformation</h3>
+          <h3>{ttrans("enterprise.title")}</h3>
           <div className="card-icon">↗</div>
         </div>
 
-        <p>
-          Modernize legacy workflows, integrate systems, automate
-          operations and create data-driven digital experiences.
-        </p>
+        <p>{ttrans("enterprise.description")}</p>
 
         <a href="#contact" className="card-button">
-          Discuss Solution <span>→</span>
+          {ttrans("enterprise.button")} <span>→</span>
         </a>
       </div>
 
@@ -249,22 +245,15 @@ ${formData.message}
 
       <div className="services-intro">
 
-        <div>
-          <p className="eyebrow">01 / WHAT WE DO</p>
+      <div>
+        <p className="eyebrow">{ts("eyebrow")}</p>
 
-          <h2>
-            Digital solutions built
-            <br />
-            around the way you
-            <br />
-            work.
-          </h2>
-        </div>
+        <h2>{ts("title")}</h2>
+      </div>
 
-        <p className="services-intro-text">
-          From websites and software to digital marketing and business
-          solutions, we build practical technology around your goals.
-        </p>
+      <p className="services-intro-text">
+        {ts("description")}
+      </p>
 
       </div>
 
@@ -279,11 +268,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Custom Website Development</h3>
-            <p>
-              Custom-built websites designed around your brand, business
-              goals and customers.
-            </p>
+            <h3>{ts("items.website.title")}</h3>
+            <p>{ts("items.website.description")}</p>
           </div>
         </div>
 
@@ -296,11 +282,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Business &amp; Corporate Websites</h3>
-            <p>
-              Professional websites that establish your online presence
-              and support business growth.
-            </p>
+            <h3>{ts("items.corporate.title")}</h3>
+            <p>{ts("items.corporate.description")}</p>
           </div>
         </div>
 
@@ -313,11 +296,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>E-Commerce Development</h3>
-            <p>
-              Scalable online stores built to deliver smooth shopping
-              experiences and support sales.
-            </p>
+            <h3>{ts("items.ecommerce.title")}</h3>
+            <p>{ts("items.ecommerce.description")}</p>
           </div>
         </div>
 
@@ -330,11 +310,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>UI/UX Design</h3>
-            <p>
-              Simple and engaging interfaces designed to make digital
-              products easy and enjoyable to use.
-            </p>
+            <h3>{ts("items.uiux.title")}</h3>
+            <p>{ts("items.uiux.description")}</p>
           </div>
         </div>
 
@@ -347,11 +324,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Mobile &amp; Responsive Websites</h3>
-            <p>
-              Responsive experiences that work smoothly across mobile,
-              tablet and desktop devices.
-            </p>
+           <h3>{ts("items.responsive.title")}</h3>
+            <p>{ts("items.responsive.description")}</p>
           </div>
         </div>
 
@@ -364,11 +338,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>CRM &amp; Business Solutions</h3>
-            <p>
-              Digital solutions that help businesses manage customers,
-              workflows and everyday operations.
-            </p>
+           <h3>{ts("items.crm.title")}</h3>
+            <p>{ts("items.crm.description")}</p>
           </div>
         </div>
 
@@ -381,11 +352,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>SEO &amp; Digital Marketing</h3>
-            <p>
-              Strategies that improve online visibility, reach the right
-              audience and generate meaningful growth.
-            </p>
+            <h3>{ts("items.seo.title")}</h3>
+            <p>{ts("items.seo.description")}</p>
           </div>
         </div>
 
@@ -398,11 +366,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Performance Marketing</h3>
-            <p>
-              Data-driven campaigns focused on measurable traffic,
-              leads and business results.
-            </p>
+            <h3>{ts("items.performance.title")}</h3>
+            <p>{ts("items.performance.description")}</p>
           </div>
         </div>
 
@@ -415,11 +380,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Custom Software Development</h3>
-            <p>
-              Tailored software solutions built around your specific
-              business processes and requirements.
-            </p>
+           <h3>{ts("items.software.title")}</h3>
+          <p>{ts("items.software.description")}</p>
           </div>
         </div>
 
@@ -432,11 +394,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Flutter App Development</h3>
-            <p>
-              Build beautiful, high-performance Android and iOS apps
-              with Flutter from a single codebase.
-            </p>
+            <h3>{ts("items.flutter.title")}</h3>
+            <p>{ts("items.flutter.description")}</p>
           </div>
         </div>
 
@@ -449,11 +408,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Network Infrastructure Setup</h3>
-            <p>
-              Build reliable, secure, and scalable network infrastructure
-              for your business.
-            </p>
+            <h3>{ts("items.network.title")}</h3>
+            <p>{ts("items.network.description")}</p>
           </div>
         </div>
 
@@ -466,11 +422,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Security Audit &amp; VAPT</h3>
-            <p>
-              Identify vulnerabilities, strengthen security, and protect
-              your systems from cyber threats.
-            </p>
+           <h3>{ts("items.security.title")}</h3>
+            <p>{ts("items.security.description")}</p>
           </div>
         </div>
 
@@ -483,11 +436,8 @@ ${formData.message}
           </div>
 
           <div>
-            <h3>Influencer Marketing</h3>
-            <p>
-              Connect with the right influencers to increase brand
-              awareness, reach, and engagement.
-            </p>
+           <h3>{ts("items.influencer.title")}</h3>
+            <p>{ts("items.influencer.description")}</p>
           </div>
         </div>
 
@@ -503,15 +453,15 @@ ${formData.message}
 <section id="technology" className="section tech-section">
   <div className="page-width">
 
-    <p className="eyebrow ">✦ Technology Ecosystem</p>
+    <p className="eyebrow">{ttech("eyebrow")}</p>
 
     <h2 className="tech-heading">
-      Build. Transform. Scale.{" "}
-      <span>One Stop Technology Partner.</span>
+      {ttech("title")}{" "}
+      <span>{ttech("titleHighlight")}</span>
     </h2>
 
     <p className="section-subtitle">
-      200+ technology experts across modern tech stacks.
+      {ttech("description")}
     </p>
 
     <div className="tech-grid">
@@ -679,8 +629,8 @@ ${formData.message}
     </div>
 
     <a href="#contact" className="tech-button">
-      Schedule a Consultation <span>→</span>
-    </a>
+  {ttech("schedule")} <span>→</span>
+</a>
 
   </div>
 </section>
@@ -695,17 +645,17 @@ ${formData.message}
 
     <div className="dark-engagement-header">
 
-      <p className="dark-eyebrow">
-        ✦ Engagement Models
+     <p className="dark-eyebrow">
+        {teng("eyebrow")}
       </p>
 
       <h2>
-        We Offer Flexible Engagement Models to{" "}
-        <span>Match Your Goals, Timeline and Budget.</span>
+        {teng("title")}{" "}
+        <span>{teng("titleHighlight")}</span>
       </h2>
 
       <p>
-        Choose the model that fits your roadmap, budget and delivery speed.
+        {teng("description")}
       </p>
 
     </div>
@@ -723,19 +673,15 @@ ${formData.message}
         </div>
 
         <div>
-          <h3>Scale</h3>
+         <h3>{teng("scale.title")}</h3>
 
-          <h4>Dedicated Team</h4>
+          <h4>{teng("scale.subtitle")}</h4>
 
-          <p>
-            Scale your capabilities with dedicated developers,
-            designers, engineers and AI specialists - seamlessly
-            integrated with your team.
-          </p>
+          <p>{teng("scale.description")}</p>
         </div>
 
         <a href="#contact">
-          Build a Team <span>→</span>
+          {teng("scale.button")} <span>→</span>
         </a>
 
       </article>
@@ -751,19 +697,15 @@ ${formData.message}
         </div>
 
         <div>
-          <h3>Launch</h3>
+          <h3>{teng("launch.title")}</h3>
 
-          <h4>Fixed Cost Model</h4>
+          <h4>{teng("launch.subtitle")}</h4>
 
-          <p>
-            From web and mobile to custom software, turn
-            defined requirements into scalable solutions with
-            clear scope, timelines and costs.
-          </p>
+          <p>{teng("launch.description")}</p>
         </div>
 
         <a href="#contact">
-          Get a Quote <span>→</span>
+          {teng("launch.button")}<span>→</span>
         </a>
 
       </article>
@@ -779,20 +721,16 @@ ${formData.message}
         </div>
 
         <div>
-          <h3>Flexible</h3>
+         <h3>{teng("flexible.title")}</h3>
 
-          <h4>Hourly Basis</h4>
+          <h4>{teng("flexible.subtitle")}</h4>
 
-          <p>
-            Stay agile with on-demand tech talent for evolving
-            requirements, continuous improvements and rapid
-            development needs.
-          </p>
+          <p>{teng("flexible.description")}</p>
         </div>
 
-        <a href="#contact">
-          Start a Discussion <span>→</span>
-        </a>
+          <a href="#contact">
+            {teng("flexible.button")} <span>→</span>
+          </a>
 
       </article>
 
@@ -812,51 +750,51 @@ ${formData.message}
 
       <div className="contact-left">
 
-        <p className="eyebrow">05 / LET&apos;S TALK</p>
+       <p className="eyebrow">{tc("eyebrow")}</p>
 
-        <h2>
-          Tell us what <span>you&apos;re building.</span>
-        </h2>
+      <h2>
+        {tc("title")} <span>{tc("titleHighlight")}</span>
+      </h2>
 
         <div className="contact-stats">
 
           <div className="contact-stat">
             <div className="stat-icon">✦</div>
             <div>
-              <h3>
-                <CountUp end={3} duration={1800} /> Years of Experience
-              </h3>
-              <p>Proven technology expertise since 2024.</p>
+            <h3>
+              <CountUp end={3} duration={1800} /> {tc("experience")}
+            </h3>
+            <p>{tc("experienceDescription")}</p>
             </div>
           </div>
 
           <div className="contact-stat">
             <div className="stat-icon">☺</div>
             <div>
-              <h3>
-                <CountUp end={700} duration={2200} /> Happy Clients
-              </h3>
-              <p>From startups to Fortune 500 enterprises.</p>
+           <h3>
+            <CountUp end={700} duration={2200} /> {tc("clients")}
+          </h3>
+          <p>{tc("clientsDescription")}</p>
             </div>
           </div>
 
           <div className="contact-stat">
             <div className="stat-icon">▣</div>
             <div>
-              <h3>
-                <CountUp end={500} duration={2600} /> Projects
-              </h3>
-              <p>Ideas transformed into digital solutions.</p>
+             <h3>
+              <CountUp end={500} duration={2600} /> {tc("projects")}
+            </h3>
+            <p>{tc("projectsDescription")}</p>
             </div>
           </div>
 
           <div className="contact-stat">
             <div className="stat-icon">♧</div>
             <div>
-              <h3>
-                <CountUp end={25} duration={1800} /> Tech Professionals
+             <h3>
+                <CountUp end={25} duration={1800} /> {tc("professionals")}
               </h3>
-              <p>Experts across modern technologies.</p>
+              <p>{tc("professionalsDescription")}</p>
             </div>
           </div>
 
@@ -867,15 +805,12 @@ ${formData.message}
 
     <div className="contact-form-card">
 
-      <h2>
-        Discuss Your Software Development, AI & Digital Transformation
-        Needs
-      </h2>
+      <h2>{tc("formTitle")}</h2>
 
       <form className="contact-form" onSubmit={handleSubmit}>
 
   <div className="form-group">
-    <label htmlFor="fullName">Full Name *</label>
+    <label htmlFor="fullName">{tc("fullName")}</label>
 
     <input
       id="fullName"
@@ -888,7 +823,7 @@ ${formData.message}
 
 
   <div className="form-group">
-    <label htmlFor="email">Business Email Address *</label>
+    <label htmlFor="email">{tc("email")}</label>
 
     <input
       id="email"
@@ -901,7 +836,7 @@ ${formData.message}
 
 
   <div className="form-group">
-    <label htmlFor="mobile">Mobile Number *</label>
+    <label htmlFor="mobile">{tc("mobile")}</label>
 
     <div className="phone-input">
 
@@ -968,21 +903,21 @@ ${formData.message}
   <option value="+977">NP +977</option>
       </select>
 
-      <input
-        id="mobile"
-        type="tel"
-        placeholder="Enter mobile number"
-        value={formData.mobile}
-        onChange={handleChange}
-        required
-      />
+     <input
+      id="mobile"
+      type="tel"
+      placeholder={tc("mobilePlaceholder")}
+      value={formData.mobile}
+      onChange={handleChange}
+      required
+    />
 
     </div>
   </div>
 
 
   <div className="form-group">
-    <label htmlFor="industry">Industry *</label>
+    <label htmlFor="industry">{tc("industry")}</label>
 
     <input
       id="industry"
@@ -995,11 +930,11 @@ ${formData.message}
 
 
   <div className="form-group message-group">
-    <label htmlFor="message">Message *</label>
+    <label htmlFor="message">{tc("message")}</label>
 
     <textarea
       id="message"
-      placeholder="Type your message here"
+      placeholder={tc("messagePlaceholder")}
       value={formData.message}
       onChange={handleChange}
       required
@@ -1008,13 +943,12 @@ ${formData.message}
 
 
 <p className="privacy-note">
-  <strong>Note:</strong> I consent that my personal data will be
-  processed to respond to this enquiry.
+  <strong>{tc("note")}</strong> {tc("privacyNote")}
 </p>
 
-  <button type="submit" className="form-submit">
-    Schedule a Consultation <span>→</span>
-  </button>
+<button type="submit" className="form-submit">
+  {tc("schedule")} <span>→</span>
+</button>
 
 </form>
 
@@ -1037,15 +971,14 @@ ${formData.message}
       </div>
 
       <p className="blackryce-tagline">
-        IT. INNOVATION. DIGITAL.
+        {tf("tagline")}
       </p>
 
-      <p className="blackryce-description">
-        A trusted technology partner for startups, SMEs and enterprises,
-        delivering scalable digital solutions that support business growth.
+     <p className="blackryce-description">
+        {tf("description")}
       </p>
 
-      <h3>Social Connect</h3>
+      <h3>{tf("social")}</h3>
 
       <div className="blackryce-social-links">
   <a href="https://www.facebook.com/blackryce" aria-label="Facebook">
@@ -1056,7 +989,7 @@ ${formData.message}
     href="https://www.instagram.com/blackryce_technologies"
     aria-label="Instagram"
   >
-    <img src="tech-logos/download-white.png" alt="Instagram" />
+    <img src="/tech-logos/download-white.png" alt="Instagram" />
   </a>
 
   <a
@@ -1073,15 +1006,15 @@ ${formData.message}
     {/* QUICK LINKS */}
     <div className="footer-links">
 
-      <h3>QUICK LINKS</h3>
+      <h3>{tf("quickLinks")}</h3>
 
       <div className="footer-link-list">
-        <a href="#top">Home</a>
-        <a href="#services">Services</a>
-        <a href="#technology">Technology</a>
-        <a href="#industries">Industries</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
+       <a href="#top">{tf("home")}</a>
+        <a href="#services">{tf("services")}</a>
+        <a href="#technology">{tf("technology")}</a>
+        <a href="#industries">{tf("industries")}</a>
+        <a href="#work">{tf("work")}</a>
+        <a href="#contact">{tf("contact")}</a>
       </div>
 
     </div>
@@ -1090,19 +1023,19 @@ ${formData.message}
     {/* SERVICES */}
     <div className="footer-services">
 
-      <h3>SERVICES</h3>
+     <h3>{tf("servicesTitle")}</h3>
 
       <div className="footer-service-list">
-        <a href="#services">Custom Website Development</a>
-        <a href="#services">Business & Corporate Websites</a>
-        <a href="#services">E-Commerce Development</a>
-        <a href="#services">UI/UX Design</a>
-        <a href="#services">Mobile & Responsive Websites</a>
-        <a href="#services">CRM & Business Solutions</a>
-        <a href="#services">SEO & Digital Marketing</a>
-        <a href="#services">Performance Marketing</a>
-        <a href="#services">Custom Software Development</a>
-      </div>
+  <a href="#services">{ts("items.website.title")}</a>
+  <a href="#services">{ts("items.corporate.title")}</a>
+  <a href="#services">{ts("items.ecommerce.title")}</a>
+  <a href="#services">{ts("items.uiux.title")}</a>
+  <a href="#services">{ts("items.responsive.title")}</a>
+  <a href="#services">{ts("items.crm.title")}</a>
+  <a href="#services">{ts("items.seo.title")}</a>
+  <a href="#services">{ts("items.performance.title")}</a>
+  <a href="#services">{ts("items.software.title")}</a>
+</div>
 
     </div>
 
@@ -1110,14 +1043,11 @@ ${formData.message}
     {/* CONTACT */}
    <div className="footer-contact">
 
-  <h3>CONTACT</h3>
+  <h3>{tf("contactTitle")}</h3>
 
-  <h4>India</h4>
+  <h4>{tf("country")}</h4>
 
-  <p>
-    J.D. Road, near Bou Bazar,<br />
-    Kokrajhar, Assam, India – 783370
-  </p>
+  <p>{tf("address")}</p>
 
   <p>
     <a href="mailto:info@blackryce.io">
@@ -1139,12 +1069,12 @@ ${formData.message}
   {/* BOTTOM */}
   <div className="blackryce-copyright page-width">
   <span>
-    © 2026 BlackRyce Technologies LLP, India. All Rights Reserved.  <br></br>
-  </span>
+  {tf("copyright")} <br />
+</span>
      
   <div>
-    <a href="/privacy-policy"> Privacy Policy</a>
-    <a href="/terms-condition">Terms & Conditions</a>
+  <Link href="/privacy-policy">{tf("privacyPolicy")}</Link>
+  <Link href="/terms-condition">{tf("terms")}</Link>
   </div>
 </div>
 
@@ -1154,3 +1084,4 @@ ${formData.message}
     </main>
   );
 }
+
