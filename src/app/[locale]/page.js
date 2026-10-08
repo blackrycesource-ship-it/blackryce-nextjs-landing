@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Navbar from "@/components/Navbar";
-import ScrollReveal from "@/components/ScrollReveal";
 import CountUp from "@/components/CountUp";
 import { Link } from "@/i18n/navigation";
 
@@ -78,44 +77,26 @@ ${formData.message}
       <Navbar />
 
      {/* HERO */}
-     <ScrollReveal>
-<section className="hero">
 
-<div className="hero-stars" aria-hidden="true">
-  <span>✦</span>
-  <span>✦</span>
-  <span>✦</span>
-  <span>✦</span>
-  <span>✦</span>
-  <span>✦</span>
-  <span>✦</span>
-  <span>✦</span>
-</div>
+<section className="hero">
 
   <div className="page-width hero-grid">
 
     <div className="hero-copy">
-        <p className="eyebrow brand-loader">
-        {t("brand").split("").map((letter, index) => (
-            <span
-            key={index}
-            style={{ animationDelay: `${index * 0.08}s` }}
-            >
-            {letter === " " ? "\u00A0" : letter}
-            </span>
-        ))}
-        </p>
+        <p className="eyebrow">
+          {t("brand")}
+         </p>
 
-        <h1 className="hero-animate hero-delay-2">
+        <h1>
         {t("title")}
         <span>{t("titleHighlight")}</span>
         </h1>
 
-        <p className="hero-text hero-animate hero-delay-3">
+        <p className="hero-text">
         {t("description")}
         </p>
 
-        <div className="hero-actions hero-animate hero-delay-4">
+        <div className="hero-actions">
         <a className="button button-dark" href="#contact">
             {t("startConversation")}
         </a>
@@ -127,7 +108,7 @@ ${formData.message}
     </div>
 
     {/* decorative only, hidden on mobile via css */}
-    <div className="hero-mark hero-animate hero-delay-3" aria-hidden="true">
+    <div className="hero-mark" aria-hidden="true">
       <div className="mark-box">
         <span>BR</span>
       </div>
@@ -137,10 +118,10 @@ ${formData.message}
 
   </div>
 </section>
-</ScrollReveal>
 
 
-<ScrollReveal>
+
+
 <section className="trust-strip">
   <div className="page-width">
    <p className="eyebrow">{ttrust("eyebrow")}</p>
@@ -165,10 +146,9 @@ ${formData.message}
 </div>
   </div>
 </section>
-</ScrollReveal>
 
 
-<ScrollReveal>
+
 <section className="section transformation-section">
   <div className="page-width">
 
@@ -234,11 +214,11 @@ ${formData.message}
 
   </div>
 </section>
-</ScrollReveal>
+
 
 {/* 01 - SERVICES */}
 {/* 01 - SERVICES */}
-<ScrollReveal>
+
 
   <section id="services" className="section services-section">
     <div className="page-width">
@@ -446,10 +426,10 @@ ${formData.message}
     </div>
   </section>
 
-</ScrollReveal>
+
 
 {/* 02 - TECHNOLOGY */}
-<ScrollReveal>
+
 <section id="technology" className="section tech-section">
   <div className="page-width">
 
@@ -634,11 +614,11 @@ ${formData.message}
 
   </div>
 </section>
-</ScrollReveal>
+
 
 
 {/* 05 - ENGAGEMENT MODELS */}
-<ScrollReveal>
+
 <section id="work" className="dark-engagement-section">
 
   <div className="page-width">
@@ -739,11 +719,11 @@ ${formData.message}
   </div>
 
 </section>
-</ScrollReveal>
+
 
 
   {/* CONTACT */}
-<ScrollReveal>
+
   <section id="contact" className="contact-section">
 
     <div className="page-width contact-layout">
@@ -957,7 +937,7 @@ ${formData.message}
   </div>
 
 </section>
-</ScrollReveal>
+
 <footer className="blackryce-footer">
 
   <div className="blackryce-footer-content page-width">
